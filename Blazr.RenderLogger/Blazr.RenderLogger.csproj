@@ -8,13 +8,13 @@
 
 	<PropertyGroup>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Title>Blazr Diode State Manangement Framework</Title>
+		<Title>Blazr Render Logger</Title>
 		<Authors>Shaun Curtis</Authors>
 		<Company>Cold Elm Coders</Company>
-		<Description>Component and Services to Dispkay and Log Render State</Description>
+		<Description>Component and Services to Display and Log Render State</Description>
 		<Copyright>Use and Donate</Copyright>
 		<PackageReadmeFile>Package.md</PackageReadmeFile>
-		<RepositoryUrl>https://github.com/ShaunCurtis/Blazr.Diode</RepositoryUrl>
+		<RepositoryUrl>https://github.com/ShaunCurtis/Blazr.RenderLogger</RepositoryUrl>
 		<PackageReleaseNotes>Pre Release Test Version</PackageReleaseNotes>
 		<AssemblyVersion>0.1.0</AssemblyVersion>
 		<FileVersion>0.1.0</FileVersion>
@@ -22,30 +22,23 @@
 		<PackageLicenseFile>license.txt</PackageLicenseFile>
 	</PropertyGroup>
 
-  <ItemGroup>
-    <SupportedPlatform Include="browser" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Update="license.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Update="Package.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Blazr.RenderLogger.Components\Blazr.RenderLogger.Components.csproj" />
     <ProjectReference Include="..\Blazr.RenderLogger.Core\Blazr.RenderLogger.Core.csproj" />
-    <ProjectReference Include="..\Blazr.RenderLogger.Server\Blazr.RenderLogger.Server.csproj" />
-    <ProjectReference Include="..\Blazr.RenderLogger.WASM\Blazr.RenderLogger.WASM.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="license.txt">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Update="Package.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
   </ItemGroup>
 
 </Project>
