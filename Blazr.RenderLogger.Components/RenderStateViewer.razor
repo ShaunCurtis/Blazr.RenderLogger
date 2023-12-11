@@ -1,0 +1,21 @@
+@using Blazr.RenderLogger.Core;
+
+@using Microsoft.Extensions.DependencyInjection
+
+@inject IRenderStateService RenderService
+
+<div class="@_alertCss m-2">
+    ID: @RenderService.UidName => Mode: @_alertText
+</div>
+
+@code {
+    private bool _preRender => this.RenderService?.IsPreRender ?? false;
+    private bool _hasService => this.RenderService is not null;
+    private string _alertCss => _preRender ? "alert alert-warning" : this.RenderService.Renderer == "Server" ? "alert alert-secondary" : "alert alert-primary";
+    private string _alertText => !_preRender ? $"{this.RenderService.Renderer} Rendered" : "Pre Rendered";
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+}
