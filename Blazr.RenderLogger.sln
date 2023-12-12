@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazr.RenderLogger.Server", "Blazr.RenderLogger.Server\Blazr.RenderLogger.Server.csproj", "{61366393-4CBA-4BDC-88DD-579FBCEFB47E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazr.RenderLogger.Server", "Blazr.RenderLogger.Server\Blazr.RenderLogger.Server.csproj", "{61366393-4CBA-4BDC-88DD-579FBCEFB47E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazr.RenderLogger.WASM", "Blazr.RenderLogger.WASM\Blazr.RenderLogger.WASM.csproj", "{021380A2-3215-45A1-8ECF-8E6D2C9EF32D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazr.RenderLogger.WASM", "Blazr.RenderLogger.WASM\Blazr.RenderLogger.WASM.csproj", "{021380A2-3215-45A1-8ECF-8E6D2C9EF32D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazr.RenderLogger.Core", "Blazr.RenderLogger.Core\Blazr.RenderLogger.Core.csproj", "{B936E3F0-C8F4-4F3B-A026-EC824F2933C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazr.RenderLogger.Core", "Blazr.RenderLogger.Core\Blazr.RenderLogger.Core.csproj", "{B936E3F0-C8F4-4F3B-A026-EC824F2933C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazr.RenderLogger", "Blazr.RenderLogger\Blazr.RenderLogger.csproj", "{C6CE2C1F-2003-4528-9818-3AD20D885775}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazr.RenderLogger", "Blazr.RenderLogger\Blazr.RenderLogger.csproj", "{C6CE2C1F-2003-4528-9818-3AD20D885775}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8CF36F38-062C-492C-A58B-B666B11CE7EF}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

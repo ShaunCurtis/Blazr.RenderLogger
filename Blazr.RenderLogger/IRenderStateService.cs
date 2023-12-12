@@ -1,4 +1,4 @@
-﻿namespace Blazr.RenderLogger.Core;
+﻿namespace Blazr.RenderLogger;
 
 public interface IRenderStateService
 {
